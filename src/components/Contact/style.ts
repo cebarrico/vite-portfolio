@@ -5,11 +5,10 @@ export const SectionStyle = styled.section`
   width: 80%;
   min-height: 70vh;
   display: flex;
-  flex-direction: column;
   justify-content: center;
   align-items: center;
   font-size: 2.2rem;
-  margin-top: 29rem;
+  margin-top: 11rem;
   scroll-behavior: smooth;
   position: relative;
 
@@ -31,7 +30,17 @@ export const SectionStyle = styled.section`
   }
 
   .project-span {
-    color: var(--color-red);
-    padding-left: 2.5rem;
+    color: var(--color-gray-700);
+    padding-left: 25px;
+  }
+
+  @media (max-width: 800px) {
+    .project-text {
+      align-items: center;
+      justify-content: center;
+    }
+    .project-span {
+      display: none;
+    }
   }
 `;

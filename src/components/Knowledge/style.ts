@@ -8,7 +8,7 @@ export const SectionStyle = styled.section`
   justify-content: space-between;
   align-items: center;
   font-size: 2.2rem;
-  margin-top: 11rem;
+  margin-top: 29rem;
   scroll-behavior: smooth;
   position: relative;
 

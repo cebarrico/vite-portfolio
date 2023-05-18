@@ -61,7 +61,7 @@ export const SectionStyle = styled.section`
       width: 0;
     }
     to {
-      width: 3.25rem;
+      width: 33.1rem;
     }
   }
 

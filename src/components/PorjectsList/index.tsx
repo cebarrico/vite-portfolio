@@ -19,11 +19,11 @@ export const ProjectList = () => {
     <>
       {projects.map((item, index) => (
         <motion.li
-          initial={{ x: "80%" }}
-          whileInView={{
-            x: 0,
-          }}
-          transition={{ duration: 0.1 * index }}
+          // initial={{ x: "80%" }}
+          // whileInView={{
+          //   x: 0,
+          // }}
+          // transition={{ duration: 0.1 * index }}
           key={index}
           onClick={() => changeProjects(index)}
           className={index === 0 ? "first-project" : ""}
@@ -34,7 +34,7 @@ export const ProjectList = () => {
           </h2>
           <div className="techs-container">
             {item.techs.map((tech, index) => (
-              <img src={tech.icon} alt={tech.name} />
+              <img key={index} src={tech.icon} alt={tech.name} />
             ))}
           </div>
           <div className="links">

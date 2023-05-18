@@ -8,6 +8,7 @@ const NavStyle = styled.header`
 
   nav {
     width: 100%;
+    max-width: 1400px;
     height: 14rem;
     display: flex;
     justify-content: space-between;

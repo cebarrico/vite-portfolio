@@ -1,11 +1,12 @@
 import { createGlobalStyle } from "styled-components";
 
 export const GlobalStyle = createGlobalStyle`
-@import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500;600;700&family=Share+Tech+Mono&display=swap');
 
  :root {
     --color-purple-900: #5200FF;
     --color-purple-800: #8F00FF;    
+    --color-purple-700: #de00f5;    
     --color-blue: #29B2FF;
     --color-red: #C65F5F;
     --color-yellow: #FFAA29;
@@ -37,6 +38,7 @@ export const GlobalStyle = createGlobalStyle`
     outline:0;
     box-sizing: border-box;
     text-decoration: none;
+    
   
   }
 
@@ -63,7 +65,9 @@ export const GlobalStyle = createGlobalStyle`
   }
 
   
-
+section{
+  max-width:1400px;
+}
   main{
     flex-direction: column;
   }

@@ -6,9 +6,9 @@ export const Header = () => {
   return (
     <NavStyle>
       <motion.nav
-        initial={{ opacity: 0, scale: 0.8 }}
+        initial={{ opacity: 0, y: "-50%" }}
         transition={{ ease: "easeOut", duration: 0.8 }}
-        whileInView={{ opacity: 1 }}
+        whileInView={{ opacity: 1, y: 0 }}
       >
         <img src={logo} alt="" />
 
