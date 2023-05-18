@@ -37,6 +37,7 @@ export const GlobalStyle = createGlobalStyle`
     outline:0;
     box-sizing: border-box;
     text-decoration: none;
+  
   }
 
   body,html{
@@ -50,6 +51,21 @@ export const GlobalStyle = createGlobalStyle`
     -webkit-font-smoothing: antialiased;
     
     overflow-x: hidden;
+  }
+
+
+ main{    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin:0;    
+    outline:1px solid transparent;
+  }
+
+  
+
+  main{
+    flex-direction: column;
   }
 
   body, input, button, textarea {

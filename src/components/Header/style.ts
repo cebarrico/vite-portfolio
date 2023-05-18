@@ -4,11 +4,11 @@ const NavStyle = styled.header`
   display: flex;
   justify-content: center;
   align-items: center;
-  border-bottom: 1px solid var(--color-purple-800);
+  border-bottom: 0.1rem solid var(--color-purple-800);
 
   nav {
     width: 100%;
-    height: 140px;
+    height: 14rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -16,13 +16,13 @@ const NavStyle = styled.header`
   }
 
   img {
-    width: 100px;
-    height: 100px;
+    width: 10rem;
+    height: 10rem;
   }
 
   .desktop-menu {
     display: flex;
-    gap: 10px;
+    gap: 1rem;
   }
 
   @media (max-width: 800px) {
@@ -34,7 +34,7 @@ const NavStyle = styled.header`
   a {
     color: var(--color-blue);
     position: relative;
-    font-size: 22px;
+    font-size: 2.2rem;
   }
 
   a > span {
@@ -44,17 +44,18 @@ const NavStyle = styled.header`
   a:hover::before {
     content: "";
     position: absolute;
-    bottom: -5px;
+    bottom: -0.5rem;
     width: 100%;
-    height: 2px;
+    height: 0.2rem;
     background-color: var(--color-purple-800);
     animation: underline 0.2s linear;
-    box-shadow: 0 0 15px var(--color-purple-800),
-      0 0 10px var(--color-purple-800), 0 0 20px var(--color-purple-800);
+    box-shadow: 0 0 1.5rem var(--color-purple-800),
+      0 0 1rem var(--color-purple-800), 0 0 2rem var(--color-purple-800);
   }
+
   a:hover > span {
-    text-shadow: 0 0 15px var(--color-purple-800),
-      0 0 10px var(--color-purple-800), 0 0 20px var(--color-purple-800);
+    text-shadow: 0 0 1.5rem var(--color-purple-800),
+      0 0 1rem var(--color-purple-800), 0 0 2rem var(--color-purple-800);
   }
 
   @keyframes underline {
