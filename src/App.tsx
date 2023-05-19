@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import "./fonts/Radiotechnika/radiotechnika-20.otf";
+import "./fonts/Radiotechnika/Radiotechnika.ttf";
 import { GlobalStyle } from "./styles/Global";
 import { LoadingPage } from "./pages/intro";
 import { HomePage } from "./pages/home";

@@ -5,7 +5,8 @@ export const GlobalStyle = createGlobalStyle`
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
 @font-face {
   font-family:"Radiotechnika" ;
-  src: url("../fonts/Radiotechnika/radiotechnika-20.otf") format("truetype");
+  src: local("Radiotechnika")
+  url("./fonts/Radiotechnika/Radiotechnika.ttf") format("truetype");
 }
 
  :root {

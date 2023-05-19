@@ -28,7 +28,7 @@ export const MainLoadingStyle = styled.main`
     text-align: center;
 
     font-size: 3rem;
-    font-family: "Playfair Display", serif;
+    font-family: "Radiotechnika";
     opacity: 0;
     animation: welcome 5s ease-in-out forwards;
     filter: drop-shadow(0 0 2rem var(--color-purple-800))

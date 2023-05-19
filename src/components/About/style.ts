@@ -43,7 +43,7 @@ export const SectionStyle = styled.section`
 
   h1 {
     padding-left: 75px;
-    font-family: "Playfair Display", serif;
+    font-family: "Radiotechnika";
     background: linear-gradient(
       to right,
       var(--color-purple-800),
