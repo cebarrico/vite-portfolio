@@ -29,7 +29,7 @@ export const UlStyle = styled.ul`
     height: 20rem;
     transition: transform 0.3s ease-in-out;
     position: relative;
-
+    z-index: 1;
     border-radius: 2rem;
     /* overflow: hidden; */
     list-style-type: none;

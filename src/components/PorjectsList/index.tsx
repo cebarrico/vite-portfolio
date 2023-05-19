@@ -19,11 +19,9 @@ export const ProjectList = () => {
     <>
       {projects.map((item, index) => (
         <motion.li
-          // initial={{ x: "80%" }}
-          // whileInView={{
-          //   x: 0,
-          // }}
-          // transition={{ duration: 0.1 * index }}
+          initial={{ opacity: 0, scale: 0.2 }}
+          whileInView={{ opacity: 1, scale: 1 }}
+          transition={{ duration: 0.3 }}
           key={index}
           onClick={() => changeProjects(index)}
           className={index === 0 ? "first-project" : ""}

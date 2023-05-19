@@ -7,6 +7,10 @@ export const UlStyle = styled.ul`
   gap: 4rem;
   margin-top: 7.8rem;
 
+  .container-card-flip {
+    border-radius: 2rem;
+  }
+
   .card-flip {
     position: relative;
     width: 27rem;
@@ -16,7 +20,7 @@ export const UlStyle = styled.ul`
     transform-style: preserve-3d;
   }
 
-  .card-flip:hover {
+  .container-card-flip:hover > .card-flip {
     transform: rotateY(180deg);
   }
 
@@ -33,6 +37,13 @@ export const UlStyle = styled.ul`
     -webkit-backface-visibility: hidden;
     border: 1px solid var(--color-purple-800);
     border-radius: 2rem;
+  }
+
+  .container-card-flip:hover {
+    box-shadow: 0 0 0.5rem var(--color-purple-800),
+      0 0 1rem var(--color-purple-800), 0 0 1.5rem var(--color-purple-800);
+    transition: 0.5s linear;
+    transition-delay: 0.39s;
   }
 
   .back-li {
@@ -56,7 +67,7 @@ export const UlStyle = styled.ul`
     width: 90%;
     height: 20rem;
     font-size: 1.6rem;
-    color: #29b2ff;
+    color: var(--color-blue);
     padding: 0.5rem;
     display: flex;
     align-items: center;

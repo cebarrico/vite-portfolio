@@ -2,7 +2,8 @@ import { useState } from "react";
 import { FromStyled } from "./style";
 import { toast } from "react-toastify";
 import emailjs from "@emailjs/browser";
-import send from "../../../images/send100.png";
+import { motion } from "framer-motion";
+import { BsFillRocketTakeoffFill } from "react-icons/bs";
 
 export const FormComponent = () => {
   const [inputValue, setInputValue] = useState({
@@ -71,7 +72,11 @@ export const FormComponent = () => {
 
   return (
     <FromStyled onSubmit={handleSubmit}>
-      <div>
+      <motion.div
+        initial={{ opacity: 0, scale: 0.5 }}
+        whileInView={{ opacity: 1, scale: 1 }}
+        transition={{ duration: 0.5 }}
+      >
         <p className="yellow-text">
           <span className="code-line">00</span>
           <span className="purple-text">class</span> MeContate{" "}
@@ -111,8 +116,12 @@ export const FormComponent = () => {
           {" "}
           <span className="code-line">04</span>&#125;
         </span>
-      </div>
-      <div>
+      </motion.div>
+      <motion.div
+        initial={{ opacity: 0, scale: 0.5 }}
+        whileInView={{ opacity: 1, scale: 1 }}
+        transition={{ duration: 0.5 }}
+      >
         <p className="function yellow-text">
           <span className="code-line">05</span> emailBody
           <span className="grey-text">() &#123;</span>
@@ -153,11 +162,17 @@ export const FormComponent = () => {
         <span className="relative grey-text">
           <span className="code-line">11</span>&#125;
         </span>
-      </div>
-      <button type="submit" className="send-button">
+      </motion.div>
+      <motion.button
+        initial={{ opacity: 0, scale: 0.5 }}
+        whileInView={{ opacity: 1, scale: 1 }}
+        transition={{ duration: 0.1 }}
+        type="submit"
+        className="send-button"
+      >
         Enviar Email
-        <img src={send} alt="" />
-      </button>
+        <BsFillRocketTakeoffFill />
+      </motion.button>
     </FromStyled>
   );
 };

@@ -7,6 +7,7 @@ export const FromStyled = styled.form`
   margin-top: 2rem;
   padding-left: 2.5rem;
   line-height: 2.9rem;
+  z-index: 1;
 
   @media (max-width: 800px) {
     display: none;
@@ -68,7 +69,7 @@ export const FromStyled = styled.form`
 
   input,
   textarea {
-    width: 3.5rem;
+    width: 3.9rem;
     background-color: transparent;
     outline: none;
     border: none;
@@ -88,54 +89,102 @@ export const FromStyled = styled.form`
     font-size: 1.8rem;
     padding-left: 0.5rem;
   }
+
   input:focus::placeholder,
   textarea:focus::placeholder {
     color: transparent;
     font-size: 1.8rem;
     padding-left: 0.5rem;
   }
+
   .send-button {
     cursor: pointer;
     margin-top: 1.5rem;
-    position: relative;
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
-    border: none;
-    padding: 02rem;
-    color: white;
-    font-weight: 500;
-    font-family: "Fira Code", monospace;
     width: 15rem;
     height: 3.5rem;
-    background-color: var(--color-purple-800);
-    border-radius: 1rem;
-    box-shadow: -0.4rem 0.5rem 0 rgba(82, 0, 255);
+    position: relative;
+    font-weight: 700;
+    font-family: "Fira Code", monospace;
+    color: var(--color-gray-900);
+    display: grid;
+    place-content: center;
+    padding: 2rem;
+    background: linear-gradient(
+      rgba(85, 83, 83, 1),
+      rgba(54, 53, 53, 1),
+      rgba(48, 48, 48, 1)
+    );
+    border: 0.2rem solid #222;
+    border-radius: 0.6rem;
+    box-shadow: inset 0 0.5rem 0.1rem rgba(0, 0, 0, 0.35),
+      0 0.5rem 0.5rem rgba(0, 0, 0, 0.5), 0 1.5rem 2.5rem rgba(0, 0, 0, 0.35);
     transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    z-index: 1;
+  }
+
+  .send-button:hover {
+    color: var(--color-gray-200);
+    text-shadow: 0 0 0.5rem var(--color-gray-100),
+      0 0 1rem var(--color-gray-100);
+    transition: 0.2s ease-in-out;
   }
 
   .send-button:active {
     color: transparent;
     transform: translate(-0.3rem, 0.3rem);
     box-shadow: none;
+    text-shadow: none;
     transition-duration: 0.1;
   }
 
-  .send-button > img {
+  .send-button > svg {
     opacity: 0;
     position: absolute;
+    top: 1.3rem;
     right: 0;
     margin-right: 2rem;
     width: 3.5rem;
     transition-duration: 0.3s;
+    animation: rocket 5s ease-in-out infinite;
   }
 
   .send-button:focus {
     color: transparent;
+    text-shadow: none;
   }
 
-  .send-button:focus > img {
+  .send-button:focus > svg {
+    color: var(--color-gray-200);
+    filter: drop-shadow(0 0 0.5rem var(--color-gray-100));
     opacity: 1;
     right: 24%;
+  }
+
+  @keyframes rocket {
+    0%,
+    100% {
+      transform: rotate(0deg);
+      transform-origin: 0 100%;
+    }
+    10% {
+      transform: rotate(2deg);
+    }
+    20%,
+    40%,
+    60% {
+      transform: rotate(-4deg);
+    }
+    30%,
+    50%,
+    70% {
+      transform: rotate(4deg);
+    }
+    80% {
+      transform: rotate(-2deg);
+    }
+    90% {
+      transform: rotate(2deg);
+    }
   }
 `;

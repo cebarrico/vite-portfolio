@@ -1,10 +1,6 @@
 import styled from "styled-components";
 
 export const SocialMediaContainer = styled.div`
-  /* position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(100%, -50%); */
   display: flex;
   justify-content: center;
   align-items: center;
@@ -21,6 +17,7 @@ export const SocialMediaContainer = styled.div`
     align-items: center;
     justify-content: space-between;
     padding: 1rem 3rem;
+    z-index: 1;
   }
 
   a {

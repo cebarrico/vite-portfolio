@@ -1,7 +1,9 @@
 import { useState, useEffect } from "react";
+import "./fonts/Radiotechnika/radiotechnika-20.otf";
 import { GlobalStyle } from "./styles/Global";
 import { LoadingPage } from "./pages/intro";
 import { HomePage } from "./pages/home";
+import { AnimatedBackground } from "./components/Background";
 import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 
@@ -18,7 +20,7 @@ export const App = () => {
     <>
       <GlobalStyle />
       {loading ? <LoadingPage /> : <HomePage />}
-      {/* <LoadingPage /> */}
+      <AnimatedBackground />
       <ToastContainer
         position="bottom-left"
         autoClose={1500}

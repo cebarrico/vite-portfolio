@@ -32,6 +32,7 @@ export const SectionStyle = styled.section`
   .about-span {
     color: var(--color-red);
     padding-left: 2.5rem;
+    margin-bottom: 5rem;
   }
 
   p {
@@ -42,6 +43,7 @@ export const SectionStyle = styled.section`
 
   h1 {
     padding-left: 75px;
+    font-family: "Radiotechnika";
     background: linear-gradient(
       to right,
       var(--color-purple-800),
@@ -51,12 +53,19 @@ export const SectionStyle = styled.section`
     -webkit-text-fill-color: transparent;
     overflow: hidden;
     border-right: 0.3rem solid orange;
-    margin: 0;
+    margin: 1.5rem 0 1.5rem 0;
     white-space: nowrap;
     animation: typing 3s steps(30, end), blink-caret 0.5s step-end infinite;
   }
-
   @keyframes typing {
+    from {
+      width: 0;
+    }
+    to {
+      width: 45rem;
+    }
+  }
+  @keyframes typing-mobile {
     from {
       width: 0;
     }
@@ -91,6 +100,7 @@ export const SectionStyle = styled.section`
     transition: all 0.2s;
     position: relative;
     cursor: pointer;
+    z-index: 1;
   }
 
   .card-inner {
@@ -133,6 +143,12 @@ export const SectionStyle = styled.section`
 
   @media (max-width: 800px) {
     flex-direction: column;
+    h1 {
+      font-size: 2.2rem;
+      animation: none;
+      animation: typing-mobile 3s steps(30, end),
+        blink-caret 0.5s step-end infinite;
+    }
     .card {
       margin-top: 5rem;
     }

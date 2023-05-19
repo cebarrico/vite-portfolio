@@ -16,6 +16,7 @@ export const MainLoadingStyle = styled.main`
     justify-content: center;
     color: var(--color-purple-700);
     font-weight: 700;
+    z-index: 1;
   }
 
   h1 {
@@ -27,7 +28,7 @@ export const MainLoadingStyle = styled.main`
     text-align: center;
 
     font-size: 3rem;
-    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+    font-family: "Radiotechnika";
     opacity: 0;
     animation: welcome 5s ease-in-out forwards;
     filter: drop-shadow(0 0 2rem var(--color-purple-800))
@@ -73,7 +74,7 @@ export const MainLoadingStyle = styled.main`
   h2 {
     animation: scan-text 2s ease-out;
     opacity: 0;
-    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+    font-family: "Radiotechnika";
     filter: drop-shadow(0 0 2rem var(--color-purple-800))
       drop-shadow(0 0 6.5rem var(--color-purple-800));
   }

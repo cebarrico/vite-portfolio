@@ -2,6 +2,10 @@ import { createGlobalStyle } from "styled-components";
 
 export const GlobalStyle = createGlobalStyle`
 @import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500;600;700&family=Share+Tech+Mono&display=swap');
+@font-face {
+  font-family:"Radiotechnika" ;
+  src: local("Radiotechnika"),url("./fonts/Radiotechnika/radiotechnika-20.otf") format("truetype");
+}
 
  :root {
     --color-purple-900: #5200FF;
@@ -37,8 +41,7 @@ export const GlobalStyle = createGlobalStyle`
     padding: 0;
     outline:0;
     box-sizing: border-box;
-    text-decoration: none;
-    
+    text-decoration: none;  
   
   }
 
@@ -52,7 +55,7 @@ export const GlobalStyle = createGlobalStyle`
     color: var(--color-gray-300);
     -webkit-font-smoothing: antialiased;
     
-    /* overflow-x: hidden; */
+    overflow-x: hidden;
   }
 
 

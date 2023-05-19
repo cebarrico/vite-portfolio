@@ -1,19 +1,23 @@
 import styled from "styled-components";
 const NavStyle = styled.header`
+  position: relative;
   width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
-  border-bottom: 0.1rem solid var(--color-purple-800);
+  background: none;
+  z-index: 1;
+  font-family: "Radiotechnika";
+  box-shadow: inset 0px -12px 12px -7px var(--color-purple-800);
 
   nav {
-    width: 100%;
+    width: 80%;
     max-width: 1400px;
     height: 14rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    z-index: 4;
+    z-index: 2;
   }
 
   img {
@@ -35,7 +39,7 @@ const NavStyle = styled.header`
   a {
     color: var(--color-blue);
     position: relative;
-    font-size: 2.2rem;
+    font-size: 2rem;
   }
 
   a > span {

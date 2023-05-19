@@ -1,26 +1,52 @@
 import { SocialMediaContainer } from "./styles";
 import { BsInstagram, BsLinkedin, BsGithub, BsWhatsapp } from "react-icons/bs";
 import { SiGmail } from "react-icons/si";
+import { motion } from "framer-motion";
 
 export const SocialMedia = () => {
   return (
     <SocialMediaContainer>
       <div className="icons-container">
-        <a href="https://github.com/cebarrico">
+        <motion.a
+          initial={{ opacity: 0, y: "100%" }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.1 }}
+          href="https://github.com/cebarrico"
+        >
           <BsGithub className="github" />
-        </a>
-        <a href="https://www.linkedin.com/in/celsobarrico/">
+        </motion.a>
+        <motion.a
+          initial={{ opacity: 0, y: "100%" }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.2 }}
+          href="https://www.linkedin.com/in/celsobarrico/"
+        >
           <BsLinkedin className="linkedin" />
-        </a>
-        <a href="mailto:cbarrico@gmail.com">
+        </motion.a>
+        <motion.a
+          initial={{ opacity: 0, y: "100%" }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.3 }}
+          href="mailto:cbarrico@gmail.com"
+        >
           <SiGmail className="gmail" />
-        </a>
-        <a href="https://www.instagram.com/ceelbarrico/">
+        </motion.a>
+        <motion.a
+          initial={{ opacity: 0, y: "100%" }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.4 }}
+          href="https://www.instagram.com/ceelbarrico/"
+        >
           <BsInstagram className="instagram" />
-        </a>
-        <a href="https://wa.me/5516991911714">
+        </motion.a>
+        <motion.a
+          initial={{ opacity: 0, y: "100%" }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.5 }}
+          href="https://wa.me/5516991911714"
+        >
           <BsWhatsapp className="whatsapp" />
-        </a>
+        </motion.a>
       </div>
     </SocialMediaContainer>
   );

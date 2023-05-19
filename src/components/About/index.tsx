@@ -1,11 +1,10 @@
 import profile from "../../images/profileimg.png";
 import { SectionStyle } from "./style";
-// import { IconsBg } from "../IconsBg";
 import { motion } from "framer-motion";
+
 export const AboutSection = () => {
   return (
     <SectionStyle id="about">
-      {/* <IconsBg /> */}
       <div className="about-text">
         <motion.span
           initial={{ x: "-100%", opacity: 0 }}
@@ -45,7 +44,7 @@ export const AboutSection = () => {
       <motion.div
         initial={{ x: "-100%", opacity: 0, rotateX: -360, rotateY: 360 }}
         whileInView={{ x: 0, opacity: [0, 0, 0, 1], rotateX: 0, rotateY: 0 }}
-        transition={{ duration: 2 }}
+        transition={{ duration: 1.3 }}
         className="card"
       >
         <div className="circle"></div>
