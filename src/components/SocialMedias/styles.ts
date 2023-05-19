@@ -34,7 +34,9 @@ export const SocialMediaContainer = styled.div`
     box-shadow: inset 0 0.5rem 0.1rem rgba(0, 0, 0, 0.35),
       0 0.5rem 0.5rem rgba(0, 0, 0, 0.5), 0 1.5rem 2.5rem rgba(0, 0, 0, 0.35);
   }
-
+  .github {
+    color: var(--color-gray-900);
+  }
   a:hover > .github {
     color: var(--color-gray-200);
     filter: drop-shadow(0 0 0.5rem var(--color-gray-100));

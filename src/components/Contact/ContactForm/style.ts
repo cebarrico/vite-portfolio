@@ -101,14 +101,13 @@ export const FromStyled = styled.form`
     cursor: pointer;
     margin-top: 1.5rem;
     width: 15rem;
-    height: 3.5rem;
+    height: 4.5rem;
     position: relative;
     font-weight: 700;
     font-family: "Fira Code", monospace;
     color: var(--color-gray-900);
     display: grid;
     place-content: center;
-    padding: 2rem;
     background: linear-gradient(
       rgba(85, 83, 83, 1),
       rgba(54, 53, 53, 1),

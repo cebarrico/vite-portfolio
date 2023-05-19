@@ -114,9 +114,43 @@ export const SectionStyle = styled.section`
   }
 
   @media (max-width: 800px) {
-    flex-direction: column;
+    flex-direction: column-reverse;
+    svg {
+      padding: 0.3rem;
+    }
+
+    .github {
+      color: var(--color-gray-200);
+      filter: drop-shadow(0 0 0.5rem var(--color-gray-100));
+      transition: 0.2s ease-in-out;
+    }
+
+    .linkedin {
+      color: var(--color-blue);
+      filter: drop-shadow(0 0 0.5rem var(--color-blue));
+      transition: 0.2s ease-in-out;
+    }
+
+    .gmail {
+      color: var(--color-red);
+      filter: drop-shadow(0 0 0.5rem var(--color-red));
+      transition: 0.2s ease-in-out;
+    }
+
+    .instagram {
+      color: var(--color-purple-800);
+      filter: drop-shadow(0 0 0.5rem #8f00ff);
+      transition: 0.2s ease-in-out;
+    }
+
+    .whatsapp {
+      color: var(--color-green);
+      filter: drop-shadow(0 0 0.5rem var(--color-green));
+      transition: 0.2s ease-in-out;
+    }
     .code-pets > h2 {
       font-size: 2rem;
+      top: 0;
     }
     .project-text {
       align-items: center;
