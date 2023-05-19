@@ -24,11 +24,11 @@ export const MenuBtm: React.FC = () => {
           height="150"
           viewBox="0 0 200 200"
         >
-          <g stroke-width="6.5" stroke-linecap="round">
+          <g strokeWidth="6.5" strokeLinecap="round">
             <path
               d="M72 82.286h28.75"
               fill="#009100"
-              fill-rule="evenodd"
+              fillRule="evenodd"
               stroke="#8f00ff"
             />
             <path
@@ -39,7 +39,7 @@ export const MenuBtm: React.FC = () => {
             <path
               d="M72 125.143h28.75"
               fill="#009100"
-              fill-rule="evenodd"
+              fillRule="evenodd"
               stroke="#8f00ff"
             />
             <path
@@ -50,13 +50,13 @@ export const MenuBtm: React.FC = () => {
             <path
               d="M100.75 82.286h28.75"
               fill="#009100"
-              fill-rule="evenodd"
+              fillRule="evenodd"
               stroke="#8f00ff"
             />
             <path
               d="M100.75 125.143h28.75"
               fill="#009100"
-              fill-rule="evenodd"
+              fillRule="evenodd"
               stroke="#8f00ff"
             />
           </g>
