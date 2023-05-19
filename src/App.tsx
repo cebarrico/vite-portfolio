@@ -6,7 +6,6 @@ import { HomePage } from "./pages/home";
 import { AnimatedBackground } from "./components/Background";
 import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
-import "./index.css";
 
 export const App = () => {
   const [loading, setLoading] = useState(true);
