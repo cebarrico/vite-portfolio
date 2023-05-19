@@ -1,4 +1,5 @@
 import { MainLoadingStyle } from "../styles/intro";
+
 export const LoadingPage = () => {
   return (
     <MainLoadingStyle>

@@ -5,8 +5,8 @@ export const KnowledgeList = () => {
   return (
     <>
       {kwnoledgeData.map((item, index) => (
-        <div className="container-card-flip">
-          <li key={index} className="card-flip">
+        <div key={index} className="container-card-flip">
+          <li className="card-flip">
             <motion.div
               initial={{ rotateY: 360, opacity: 0 }}
               whileInView={{ rotateY: 0, opacity: 1 }}

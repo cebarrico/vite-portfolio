@@ -7,7 +7,7 @@ import pets from "../../images/vspets.gif";
 export const Contact = () => {
   return (
     <SectionStyle>
-      <div className="code-pets">
+      <div id="contact" className="code-pets">
         <h2>
           Desenvolvedor <span className="fail-light">Full</span> Stack
         </h2>
@@ -20,7 +20,6 @@ export const Contact = () => {
           whileInView={{ y: 0, opacity: 1 }}
           transition={{ duration: 0.81 }}
           className="project-span"
-          id="contact"
         >
           # cbarrico@gmail.com
         </motion.span>

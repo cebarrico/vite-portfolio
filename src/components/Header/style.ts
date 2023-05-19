@@ -36,17 +36,17 @@ const NavStyle = styled.header`
     }
   }
 
-  a {
+  .link-desktop {
     color: var(--color-blue);
     position: relative;
     font-size: 2rem;
   }
 
-  a > span {
+  .link-desktop > span {
     color: var(--color-purple-800);
   }
 
-  a:hover::before {
+  .link-desktop:hover::before {
     content: "";
     position: absolute;
     bottom: -0.5rem;
@@ -58,7 +58,7 @@ const NavStyle = styled.header`
       0 0 1rem var(--color-purple-800), 0 0 2rem var(--color-purple-800);
   }
 
-  a:hover > span {
+  .link-desktop:hover > span {
     text-shadow: 0 0 1.5rem var(--color-purple-800),
       0 0 1rem var(--color-purple-800), 0 0 2rem var(--color-purple-800);
   }

@@ -1,6 +1,7 @@
 import { motion } from "framer-motion";
 import NavStyle from "./style";
 import logo from "../../images/logoceelz.png";
+import { MenuBtm } from "../MenuBtm";
 
 export const Header = () => {
   return (
@@ -11,18 +12,18 @@ export const Header = () => {
         whileInView={{ opacity: 1, y: 0 }}
       >
         <img src={logo} alt="" />
-
+        <MenuBtm />
         <div className="desktop-menu">
-          <a href="#about">
+          <a className="link-desktop" href="#about">
             <span>⬡</span> sobre
           </a>
-          <a href="#knowledge">
+          <a className="link-desktop" href="#knowledge">
             <span>⬡</span> conhecimento
           </a>
-          <a href="#projects">
+          <a className="link-desktop" href="#projects">
             <span>⬡</span> projetos
           </a>
-          <a href="#contact">
+          <a className="link-desktop" href="#contact">
             <span>⬡</span> contato
           </a>
         </div>
