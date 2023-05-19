@@ -43,7 +43,8 @@ export const SectionStyle = styled.section`
 
   h1 {
     padding-left: 75px;
-    font-family: "Radiotechnika";
+    font-family: "Electrolize", sans-serif;
+    font-weight: 700;
     background: linear-gradient(
       to right,
       var(--color-purple-800),
@@ -53,7 +54,7 @@ export const SectionStyle = styled.section`
     -webkit-text-fill-color: transparent;
     overflow: hidden;
     border-right: 0.3rem solid orange;
-    margin: 1.5rem 0 1.5rem 0;
+    margin: 1rem 0 1rem 0;
     white-space: nowrap;
     animation: typing 3s steps(30, end), blink-caret 0.5s step-end infinite;
   }
@@ -62,7 +63,7 @@ export const SectionStyle = styled.section`
       width: 0;
     }
     to {
-      width: 45rem;
+      width: 37rem;
     }
   }
   @keyframes typing-mobile {
@@ -70,7 +71,7 @@ export const SectionStyle = styled.section`
       width: 0;
     }
     to {
-      width: 33.1rem;
+      width: 27rem;
     }
   }
 

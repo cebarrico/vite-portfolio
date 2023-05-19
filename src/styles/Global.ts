@@ -2,12 +2,7 @@ import { createGlobalStyle } from "styled-components";
 
 export const GlobalStyle = createGlobalStyle`
 @import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500;600;700&family=Share+Tech+Mono&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
-@font-face {
-  font-family:"Radiotechnika" ;
-  src: local("Radiotechnika")
-  url("./fonts/Radiotechnika/Radiotechnika.ttf") format("truetype");
-}
+@import url('https://fonts.googleapis.com/css2?family=Electrolize&display=swap');
 
  :root {
     --color-purple-900: #5200FF;

@@ -28,7 +28,7 @@ export const MainLoadingStyle = styled.main`
     text-align: center;
 
     font-size: 3rem;
-    font-family: "Radiotechnika";
+    font-family: "Press Start 2P", cursive;
     opacity: 0;
     animation: welcome 5s ease-in-out forwards;
     filter: drop-shadow(0 0 2rem var(--color-purple-800))
@@ -74,7 +74,7 @@ export const MainLoadingStyle = styled.main`
   h2 {
     animation: scan-text 2s ease-out;
     opacity: 0;
-    font-family: "Radiotechnika";
+    font-family: "Press Start 2P", cursive;
     filter: drop-shadow(0 0 2rem var(--color-purple-800))
       drop-shadow(0 0 6.5rem var(--color-purple-800));
   }

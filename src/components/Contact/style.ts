@@ -50,17 +50,16 @@ export const SectionStyle = styled.section`
     position: absolute;
     top: -3rem;
     right: 0;
-    font-family: "Radiotechnika";
-    font-size: 1.5em;
+    font-family: "Press Start 2P", cursive;
+    font-size: 1.2em;
     color: var(--color-purple-800);
     white-space: nowrap;
-
     text-shadow: 0 0 2rem var(--color-purple-700);
   }
 
   .fail-light {
-    font-family: "Radiotechnika";
-    font-size: 1.2em;
+    font-family: "Press Start 2P", cursive;
+    font-size: 1.1em;
     margin: 0;
     padding: 0;
     color: var(--color-purple-800);
@@ -115,6 +114,7 @@ export const SectionStyle = styled.section`
 
   @media (max-width: 800px) {
     flex-direction: column-reverse;
+
     svg {
       padding: 0.3rem;
     }
@@ -149,8 +149,8 @@ export const SectionStyle = styled.section`
       transition: 0.2s ease-in-out;
     }
     .code-pets > h2 {
-      font-size: 2rem;
-      top: 0;
+      font-size: 1.2rem;
+      top: 4rem;
     }
     .project-text {
       align-items: center;
