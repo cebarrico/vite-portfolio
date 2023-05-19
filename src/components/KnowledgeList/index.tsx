@@ -8,9 +8,9 @@ export const KnowledgeList = () => {
         <div key={index} className="container-card-flip">
           <li className="card-flip">
             <motion.div
-              initial={{ rotateY: 360, opacity: 0 }}
-              whileInView={{ rotateY: 0, opacity: 1 }}
-              transition={{ duration: 0.1 * index }}
+              initial={{ opacity: 0, scale: 0.6 }}
+              whileInView={{ opacity: 1, scale: 1 }}
+              transition={{ duration: 0.5 }}
               className="front-li"
             >
               <img src={item.image} alt="" />
