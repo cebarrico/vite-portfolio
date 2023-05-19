@@ -1,11 +1,11 @@
 import { createGlobalStyle } from "styled-components";
 
 export const GlobalStyle = createGlobalStyle`
-@import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500;600;700&family=Share+Tech+Mono&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500;600;700&family=Share+Tech+Mono&display=swap');
 @font-face {
   font-family:"Radiotechnika" ;
   src: local("Radiotechnika"),url("src/fonts/Radiotechnika/radiotechnika-20.otf") format("truetype");
-}
+} */
 
  :root {
     --color-purple-900: #5200FF;
