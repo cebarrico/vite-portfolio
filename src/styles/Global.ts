@@ -4,7 +4,7 @@ export const GlobalStyle = createGlobalStyle`
 @import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500;600;700&family=Share+Tech+Mono&display=swap');
 @font-face {
   font-family:"Radiotechnika" ;
-  src: local("Radiotechnika"),url("./fonts/Radiotechnika/radiotechnika-20.otf") format("truetype");
+  src: local("Radiotechnika"),url("src/fonts/Radiotechnika/radiotechnika-20.otf") format("truetype");
 }
 
  :root {
