@@ -52,7 +52,7 @@ export const GlobalStyle = createGlobalStyle`
     color: var(--color-gray-300);
     -webkit-font-smoothing: antialiased;
     
-    overflow-x: hidden;
+    /* overflow-x: hidden; */
   }
 
 

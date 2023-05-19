@@ -43,7 +43,7 @@ export const AboutSection = () => {
         </motion.p>
       </div>
       <motion.div
-        initial={{ x: "100%", opacity: 0, rotateX: -360, rotateY: 360 }}
+        initial={{ x: "-100%", opacity: 0, rotateX: -360, rotateY: 360 }}
         whileInView={{ x: 0, opacity: [0, 0, 0, 1], rotateX: 0, rotateY: 0 }}
         transition={{ duration: 2 }}
         className="card"

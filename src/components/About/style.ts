@@ -114,6 +114,7 @@ export const SectionStyle = styled.section`
       var(--color-purple-800)
     );
     border-radius: 50%;
+    filter: drop-shadow(0 0 0.5rem #8f00ff) drop-shadow(0 0 1rem #8f00ff);
     position: absolute;
 
     animation: move-up6 2s ease-in infinite alternate-reverse;
