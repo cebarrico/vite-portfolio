@@ -1,5 +1,5 @@
 import { MenuModalContainer } from "./styles";
-import { BsInstagram, BsLinkedin, BsGithub, BsWhatsapp } from "react-icons/bs";
+import { BsWhatsapp } from "react-icons/bs";
 import { FaUniversity } from "react-icons/fa";
 import { MdContentPasteSearch } from "react-icons/md";
 import { motion } from "framer-motion";

@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import { MenuContainer } from "./style";
-import { ModalContainer } from "./modal";
 import { MenuModal } from "../MenuModal";
 
 export const MenuBtm: React.FC = () => {

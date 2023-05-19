@@ -1,4 +1,3 @@
-import React from "react";
 import { SectionStyle } from "./style";
 import { UlKnowledge } from "./KnowledgeUl";
 import { motion } from "framer-motion";
