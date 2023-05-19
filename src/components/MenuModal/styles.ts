@@ -40,21 +40,24 @@ export const MenuModalContainer = styled.div`
     border-radius: 50%;
     box-shadow: inset 0 0.5rem 0.1rem rgba(0, 0, 0, 0.35),
       0 0.5rem 0.5rem rgba(0, 0, 0, 0.5), 0 1.5rem 2.5rem rgba(0, 0, 0, 0.35);
-    z-index: 5;
+    z-index: 6;
   }
 
   .mobile-knowledge {
+    z-index: 6;
     color: var(--color-gray-200);
     filter: drop-shadow(0 0 0.5rem var(--color-gray-100));
     transition: 0.2s ease-in-out;
   }
   .mobile-projects {
+    z-index: 6;
     color: var(--color-red);
     filter: drop-shadow(0 0 0.5rem var(--color-red));
     transition: 0.2s ease-in-out;
   }
 
   .mobile-contact {
+    z-index: 6;
     color: var(--color-green);
     filter: drop-shadow(0 0 0.5rem var(--color-green));
     transition: 0.2s ease-in-out;

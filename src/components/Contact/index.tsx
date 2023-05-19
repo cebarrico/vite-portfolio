@@ -7,7 +7,7 @@ import pets from "../../images/vspets.gif";
 export const Contact = () => {
   return (
     <SectionStyle>
-      <div id="contact" className="code-pets">
+      <div className="code-pets">
         <h2>
           Desenvolvedor <span className="fail-light">Full</span> Stack
         </h2>

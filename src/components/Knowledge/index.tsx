@@ -10,7 +10,6 @@ export const KnowledgeSection = () => {
           initial={{ x: "-100%", opacity: 0 }}
           whileInView={{ x: 0, opacity: 1 }}
           transition={{ duration: 0.81 }}
-          id="knowledge"
           className="bracket"
         >
           &#123;

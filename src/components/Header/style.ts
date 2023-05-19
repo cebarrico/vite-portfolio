@@ -1,14 +1,16 @@
 import styled from "styled-components";
 const NavStyle = styled.header`
-  position: relative;
+  position: fixed !important;
   width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
   background: none;
-  z-index: 1;
+  z-index: 5;
   font-family: "Radiotechnika";
   box-shadow: inset 0px -12px 12px -7px var(--color-purple-800);
+  background-color: rgba(36, 36, 36, 0.6);
+  backdrop-filter: blur(0.17rem);
 
   nav {
     width: 80%;

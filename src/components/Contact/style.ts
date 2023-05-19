@@ -12,7 +12,9 @@ export const SectionStyle = styled.section`
   margin-top: 11rem;
   scroll-behavior: smooth;
   position: relative;
-
+  .contact {
+    margin-top: 10rem;
+  }
   .project-text {
     width: 100%;
     display: flex;
